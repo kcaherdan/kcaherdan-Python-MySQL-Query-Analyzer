@@ -1,0 +1,18 @@
+DROP TABLE IF EXISTS `users`;
+
+CREATE TABLE `users` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `name` varchar(255) default NULL,
+  `email` varchar(255) default NULL,
+  `address` varchar(255) default NULL,
+  `postalZip` varchar(10) default NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+INSERT INTO `users` (`name`,`email`,`address`,`postalZip`)
+VALUES
+  ("Macaulay Chase","curae.donec@hotmail.org","663 Risus. Av.","1165"),
+  ("Blaze Jacobson","ipsum.porta@outlook.org","P.O. Box 712, 733 Tempus Av.","39385"),
+  ("Maggie Bush","est.congue@hotmail.net","Ap #804-564 Consectetuer Rd.","766698"),
+  ("Brianna Barber","dolor.dapibus.gravida@icloud.couk","P.O. Box 498, 3652 Elementum Rd.","C3I 7TM"),
+  ("Amery Walker","habitant@protonmail.couk","P.O. Box 215, 3443 Eu St.","53103");
